@@ -1,0 +1,105 @@
+*{border: 1px solid red !important;}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.row{ 
+	width: 100%;
+	display: inline;
+	display: flex;
+	flex-wrap: wrap;
+	display: float;
+ }
+
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;text-align: center;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-5{width: 55%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.menu-item {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 11px; 
+}
+
+.projects_list {
+
+}
+
+.project-item {
+	text-align: center;
+	font-size: 3.65em;
+}
+
+.italic {
+	font-style: italic;
+}
+
+@media (min-width: 700px){
+	.projects_list {
+		font-size: 1.5em;
+}
+
+.image-gallery {
+	display: block;
+	align-content: center;
+	vertical-align: center;
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.intro-image {
+	max-width: 800px;
+	max-height: 800px;
+}
+
+figure {
+    height: 500px;
+    position: relative;
+    width: 500px;
+    
+    &:hover {
+        figcaption {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    
+    figcaption {
+        background-color: #fff;
+        box-sizing: border-box;
+        height: 100%;
+        opacity: 0;
+        padding: 2em;
+        position: absolute;
+        top: 0;
+        transition: opacity .5s ease, visibility .5s;
+        visibility: hidden;
+        width: 100%;
+    }
+}
+
+ul {list-style: none; padding: 5% 8.33%; }
+.button {
+	vertical-align: button;
+	text-align: center;
+}
